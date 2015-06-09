@@ -1,0 +1,16 @@
+/* ==========================================================================
+ FOOTER
+ ========================================================================== */
+
+ .site-footer {
+    display: table;
+    text-align: center;
+    width: 100%;
+    background: $darkprimary;
+    padding: $spacing-unit;
+ }
+
+ .site-footer > p {
+    display: table-cell;
+    vertical-align: middle;
+ }

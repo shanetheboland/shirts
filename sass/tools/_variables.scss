@@ -1,0 +1,75 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+// Fonts
+$body-font: 'Proxima Nova', Helvetica, Arial, sans-serif;//400,400italic,800
+$header-font: 'Proxima Nova Soft', Georgia, sans-serif;//400,700
+
+
+//
+// COLOR VARIABLES
+//
+// - Cool
+// - Warm
+// - Gray Scale
+//
+
+// Cool
+
+$aqua:  #7FDBFF;
+$blue:  #0074D9;
+$navy:  #001F3F;
+$teal:  #39CCCC;
+$green: #2ECC40;
+$olive: #3D9970;
+$lime:  #01FF70;
+
+// Warm
+
+$yellow:  #FFDC00;
+$orange:  #FF851B;
+$fuchsia: #F012BE;
+$purple:  #B10DC9;
+$maroon:  #85144B;
+
+// Gray Scale
+
+$white:  #fff;
+$silver: #ddd;
+$gray:   #aaa;
+$darkgray: #424242;
+$black:  #212121;
+
+$lightred: #FFCDD2;
+$red: #F44336;
+$darkred: #D32F2F;
+
+$lightindigo: #D8CCFF;
+$indigo: #6535F4;
+$darkindigo: #572ED3;
+
+$lightpink: #FF28CD;
+$pink: #F012BE;
+$darkpink: #E000BE;
+
+
+// Color Aliases
+$lightprimary: $lightpink;
+$primary:    $pink;
+$darkprimary: $darkpink;
+
+$background-color: $white;
+$secondary:  $orange;
+$text-color:       $black;
+$link-color:       $blue;
+
+
+// Spacing
+$sm-spacing-unit: 10px;
+$spacing-unit:    20px;
+$lg-spacing-unit: $spacing-unit * 2; //60px
+$content-width: $spacing-unit * 20; //600px
+
+// Borders
+$border-radius: 4px;
+$border-width: 2px;

@@ -1,0 +1,92 @@
+/* ==========================================================================
+   TYPE
+
+   - Base
+   - Type Scale
+
+   ========================================================================== */
+
+
+/* Base
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure {
+    margin: 0;
+    margin-bottom: $spacing-unit;
+}
+
+h1, h2, h3, p { margin: 0; }
+h1,h2,h3 {-webkit-font-smoothing: antialiased;text-shadow: 1px 1px 1px rgba(0,0,0,0.01)}
+
+//H1 page headers
+h1, .h1 {
+  font: normal 700 48px/1.25 $header-font;
+  margin-bottom: $spacing-unit;
+}
+//H2 secondary subtitle headers
+h2, .h2 {
+  font: normal 700 32px/1.25 $header-font;
+  margin-bottom: $spacing-unit;
+}
+//H3 in-page headers, section headers
+h3, .h3 {
+  font: normal 400 24px/1.6667 $header-font;
+  margin-bottom: $spacing-unit;
+}
+//PARAGRAPH Used for paragraph/body text
+p {
+  font: normal 400 16px/1.25 $body-font;
+  margin-bottom: $spacing-unit;
+}
+//SMALL Bold, all caps, used for navigation links, dates
+small, .small {
+  font: normal 700 14px/1.428 $body-font;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+b, strong {
+    font-weight: 700;
+}
+
+i, em {
+    font-style: italic;
+}
+/*
+  =========================================================================== */
+
+hr {
+  border: 0;
+  height: 2px;
+  margin: 0;
+  margin-top: $spacing-unit;
+  margin-bottom: 18px;//($spacing-unit - 2px)
+  background: $lightred;
+}
+
+.top-margin {
+  margin-top: $spacing-unit;
+}
+
+@media screen and (max-width:568px) {
+  h1, .h1 {
+    font: normal 700 32px/1.25 $header-font;
+    margin-bottom: $sm-spacing-unit;
+  }
+  //H2 secondary subtitle headers
+  h2, .h2 {
+    font: normal 700 24px/1.6667 $header-font;
+    margin-bottom: $sm-spacing-unit;
+  }
+  //H3 in-page headers, section headers
+  h3, .h3 {
+    font: normal 700 16px/1.25 $header-font;
+    margin-bottom: $sm-spacing-unit;
+  }
+  //PARAGRAPH Used for paragraph/body text
+  p {
+    font: normal 400 14px/1.4285 $body-font;
+    margin-bottom: $sm-spacing-unit;
+  }
+}
