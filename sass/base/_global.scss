@@ -6,6 +6,10 @@
 html {
     box-sizing: border-box;
     height: 100%;
+    // //Background image
+    // background-size: 24px;
+    // background-repeat: repeat;
+    // background-image: url(" ../../img/shirt.svg"); /* fallback */
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -19,6 +23,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    padding-top: $xl-spacing-unit;
 }
 @media screen and (max-width: 568px) {
     body {

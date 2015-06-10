@@ -4,6 +4,19 @@
    ======================= */
 
 
-   .text-white {
+.text-white {
     color: $white;
-   }
+}
+
+
+.margin-bottom {
+    margin-bottom: $spacing-unit;
+}
+
+.lg-margin-bottom {
+    margin-bottom: $lg-spacing-unit;
+}
+
+.xl-margin-bottom {
+    margin-bottom: $xl-spacing-unit;
+}

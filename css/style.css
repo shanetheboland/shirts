@@ -12,6 +12,15 @@
 .text-white {
   color: #fff; }
 
+.margin-bottom {
+  margin-bottom: 20px; }
+
+.lg-margin-bottom {
+  margin-bottom: 40px; }
+
+.xl-margin-bottom {
+  margin-bottom: 80px; }
+
 /* Base */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -361,7 +370,8 @@ body {
   font-weight: 400;
   color: #212121;
   background-color: #fff;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  padding-top: 80px; }
 
 @media screen and (max-width: 568px) {
   body {
@@ -450,8 +460,8 @@ hr {
   border: 0;
   height: 2px;
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 18px;
+  margin-top: 80px;
+  margin-bottom: 78px;
   background: #FFCDD2; }
 
 .top-margin {
@@ -625,6 +635,41 @@ hr {
 /* ==========================================================================
  SITE LAYOUT
  ========================================================================== */
+.content-wrapper {
+  margin: 0 auto; }
+
+@media screen and (max-width: 450px) {
+  .content-wrapper {
+    padding: 20px; } }
+
+@media screen and (min-width: 450px) {
+  .content-wrapper {
+    width: 100%;
+    padding: 20px; } }
+
+@media screen and (min-width: 550px) {
+  .content-wrapper {
+    width: 85%; } }
+
+@media screen and (min-width: 680px) {
+  .content-wrapper {
+    width: 70%;
+    padding-top: 20px; } }
+
+@media screen and (min-width: 920px) {
+  .content-wrapper {
+    width: 55%;
+    padding-top: 40px; } }
+
+@media screen and (min-width: 1200px) {
+  .content-wrapper {
+    max-width: 500px;
+    width: 40%;
+    padding-top: 80px; } }
+
+.margin-left-icon-width {
+  margin-left: 110px; }
+
 /* ==========================================================================
  FOOTER
  ========================================================================== */
@@ -632,7 +677,7 @@ hr {
   display: table;
   text-align: center;
   width: 100%;
-  background: #E000BE;
+  background: #2ECC40;
   padding: 20px; }
 
 .site-footer > p {
@@ -670,7 +715,7 @@ input[type="email"] {
   border-radius: 4px;
   background: #fff;
   border: 0;
-  border: 2px solid #F012BE;
+  border: 2px solid #2ECC40;
   border-radius: 4px;
   padding: 5px;
   min-width: 300px;
@@ -681,7 +726,7 @@ input[type="email"] {
 .button {
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
-  background: #F012BE;
+  background: #2ECC40;
   outline: 0;
   border: 0;
   border-radius: 4px;
@@ -693,7 +738,7 @@ input[type="email"] {
   .button:visited {
     color: #fff; }
   .button:hover {
-    background: #E000BE; }
+    background: #2ECC40; }
   .button:active {
     -webkit-transform: translateY(1px);
     -ms-transform: translateY(1px);
@@ -705,11 +750,11 @@ input[type="email"] {
   font-size: 18px; }
 
 h1 {
-  color: #E000BE;
+  color: #2ECC40;
   font-weight: 400; }
 
 .delight {
-  color: #F012BE; }
+  color: #2ECC40; }
 
 @media screen and (max-width: 568px) {
   .map-svg {
