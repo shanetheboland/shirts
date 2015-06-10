@@ -1,3 +1,49 @@
 /* ==========================================================================
  SITE LAYOUT
  ========================================================================== */
+
+ .content-wrapper {
+    // padding: 0 $xl-spacing-unit;
+    margin: 0 auto;
+   }
+   @media screen and (max-width: 450px) {
+    .content-wrapper {
+        padding: $spacing-unit;
+    }
+   }
+   @media screen and (min-width: 450px) {
+    .content-wrapper {
+        width: 100%;
+        padding: $spacing-unit;
+    }
+   }
+   @media screen and (min-width: 550px) {
+    .content-wrapper {
+        width: 85%;
+    }
+   }
+    @media screen and (min-width: 680px) {
+    .content-wrapper {
+        width: 70%;
+        padding-top: $spacing-unit;
+    }
+   }
+   @media screen and (min-width: 920px) {
+    .content-wrapper {
+        width: 55%;
+        padding-top: $lg-spacing-unit;
+    }
+   }
+   @media screen and (min-width: 1200px) {
+    .content-wrapper {
+        max-width: 500px;//make sure the line-length doesn’t get too wide on large screens
+        width: 40%;//65-70 character line-length at this width
+        padding-top: $xl-spacing-unit;
+    }
+   }
+
+
+   .margin-left-icon-width {
+    margin-left: 110px;
+    // aligns content with left side of header text, and not the icon
+   }

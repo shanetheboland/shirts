@@ -35,7 +35,7 @@ $maroon:  #85144B;
 // Gray Scale
 
 $white:  #fff;
-$silver: #ddd;
+$silver: #f5f5f5;
 $gray:   #aaa;
 $darkgray: #424242;
 $black:  #212121;
@@ -54,9 +54,9 @@ $darkpink: #E000BE;
 
 
 // Color Aliases
-$lightprimary: $lightpink;
-$primary:    $pink;
-$darkprimary: $darkpink;
+$lightprimary: $green;
+$primary:    $green;
+$darkprimary: $green;
 
 $background-color: $white;
 $secondary:  $orange;
@@ -67,7 +67,8 @@ $link-color:       $blue;
 // Spacing
 $sm-spacing-unit: 10px;
 $spacing-unit:    20px;
-$lg-spacing-unit: $spacing-unit * 2; //60px
+$lg-spacing-unit: $spacing-unit * 2; //40px
+$xl-spacing-unit: $spacing-unit * 4; //80px
 $content-width: $spacing-unit * 20; //600px
 
 // Borders
