@@ -46,6 +46,10 @@ small, .small {
   letter-spacing: .1em;
 }
 
+.tiny {
+  font: normal 400 14px/1.428 $body-font;
+}
+
 b, strong {
     font-weight: 700;
 }
@@ -67,6 +71,24 @@ hr {
 
 .top-margin {
   margin-top: $spacing-unit;
+}
+
+.indent {
+  margin-left: $spacing-unit;
+}
+
+.negative-indent {
+  margin-left: -($spacing-unit);
+}
+
+@media screen and (max-width: 800px) {
+  .indent {
+    margin-left: auto;
+  }
+
+  .negative-indent {
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width:568px) {
