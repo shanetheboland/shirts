@@ -12,6 +12,15 @@
 .text-white {
   color: #fff; }
 
+.text-black {
+  color: #212121; }
+
+.bg-dark-gray {
+  background: #424242; }
+
+.bg-silver {
+  background: #f5f5f5; }
+
 .margin-bottom {
   margin-bottom: 20px; }
 
@@ -20,6 +29,153 @@
 
 .xl-margin-bottom {
   margin-bottom: 80px; }
+
+.lg-padding {
+  padding: 40px; }
+
+.full-height {
+  min-height: 100%;
+  min-height: 100vh; }
+
+.vertical-align-container {
+  display: table;
+  width: 100%; }
+
+.vertical-align-inner {
+  display: table-cell;
+  vertical-align: middle; }
+
+.full-height.vertical-align-container {
+  height: 100%;
+  height: 100vh; }
+
+@-webkit-keyframes color-pulsate {
+  0% {
+    color: #F012BE; }
+
+  7% {
+    color: #001F3F; }
+
+  14% {
+    color: #0074D9; }
+
+  21% {
+    color: #7FDBFF; }
+
+  28% {
+    color: #39CCCC; }
+
+  35% {
+    color: #3D9970; }
+
+  42% {
+    color: #2ECC40; }
+
+  49% {
+    color: #01FF70; }
+
+  56% {
+    color: #FFDC00; }
+
+  63% {
+    color: #FF851B; }
+
+  70% {
+    color: #FF4136; }
+
+  77% {
+    color: #85144B; }
+
+  84% {
+    color: #F012BE; }
+
+  91% {
+    color: #B10DC9; }
+
+  95% {
+    color: #111; }
+
+  96% {
+    color: #ddd; }
+
+  98% {
+    color: #aaa; }
+
+  100% {
+    color: #fff; } }
+
+@-webkit-keyframes background-pulsate {
+  0% {
+    background: #F012BE !important; }
+
+  7% {
+    background: #001F3F !important; }
+
+  14% {
+    background: #0074D9 !important; }
+
+  21% {
+    background: #7FDBFF !important; }
+
+  28% {
+    background: #39CCCC !important; }
+
+  35% {
+    background: #3D9970 !important; }
+
+  42% {
+    background: #2ECC40 !important; }
+
+  49% {
+    background: #01FF70 !important; }
+
+  56% {
+    background: #FFDC00 !important; }
+
+  63% {
+    background: #FF851B !important; }
+
+  70% {
+    background: #FF4136 !important; }
+
+  77% {
+    background: #85144B !important; }
+
+  84% {
+    background: #F012BE !important; }
+
+  91% {
+    background: #B10DC9 !important; }
+
+  95% {
+    background: #111 !important; }
+
+  96% {
+    background: #ddd !important; }
+
+  98% {
+    background: #aaa !important; }
+
+  100% {
+    background: #fff !important; } }
+
+.color-change {
+  color: #F012BE;
+  -webkit-animation: color-pulsate 100s linear infinite;
+  animation: color-pulsate 100s linear infinite; }
+
+.button-color-change {
+  -webkit-animation: background-pulsate 100s linear infinite;
+  animation: background-pulsate 100s linear infinite; }
+
+.box {
+  padding: 40px;
+  width: 100%;
+  background: #f5f5f5;
+  border-radius: 4px;
+  border: 2px solid #aaa;
+  max-width: 420px;
+  margin: 0 auto; }
 
 /* Base */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -363,7 +519,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  height: 100%;
   font-family: 'Proxima Nova', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
@@ -448,6 +603,9 @@ small, .small {
   text-transform: uppercase;
   letter-spacing: 0.1em; }
 
+.tiny {
+  font: normal 400 14px/1.428 'Proxima Nova', Helvetica, Arial, sans-serif; }
+
 b, strong {
   font-weight: 700; }
 
@@ -466,6 +624,18 @@ hr {
 
 .top-margin {
   margin-top: 20px; }
+
+.indent {
+  margin-left: 20px; }
+
+.negative-indent {
+  margin-left: -20px; }
+
+@media screen and (max-width: 800px) {
+  .indent {
+    margin-left: auto; }
+  .negative-indent {
+    margin-left: auto; } }
 
 @media screen and (max-width: 568px) {
   h1, .h1 {
@@ -608,7 +778,7 @@ hr {
   display: none !important; }
 
 /* Responsive Stuff */
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 800px) {
   /* Stack anything that isn’t full-width on smaller screens 
       and doesn't provide the no-stacking-on-mobiles class */
   /* Sometimes, you just want to be different on small screens */
@@ -640,12 +810,12 @@ hr {
 
 @media screen and (max-width: 450px) {
   .content-wrapper {
-    padding: 20px; } }
+    padding: 0 20px; } }
 
 @media screen and (min-width: 450px) {
   .content-wrapper {
     width: 100%;
-    padding: 20px; } }
+    padding: 0 20px; } }
 
 @media screen and (min-width: 550px) {
   .content-wrapper {
@@ -653,19 +823,16 @@ hr {
 
 @media screen and (min-width: 680px) {
   .content-wrapper {
-    width: 70%;
-    padding-top: 20px; } }
+    width: 70%; } }
 
 @media screen and (min-width: 920px) {
   .content-wrapper {
-    width: 55%;
-    padding-top: 40px; } }
+    width: 55%; } }
 
 @media screen and (min-width: 1200px) {
   .content-wrapper {
     max-width: 500px;
-    width: 40%;
-    padding-top: 80px; } }
+    width: 40%; } }
 
 .margin-left-icon-width {
   margin-left: 110px; }
@@ -694,20 +861,6 @@ hr {
 ol, ul {
   margin-left: 1em; }
 
-.full-height {
-  height: 100%;
-  height: 100vh;
-  min-height: 100%;
-  min-height: 100vh; }
-
-.vertical-center-container {
-  display: table;
-  width: 100%; }
-
-.vertical-center-inner {
-  display: table-cell;
-  vertical-align: middle; }
-
 .line-through {
   text-decoration: line-through; }
 
@@ -726,7 +879,6 @@ input[type="email"] {
 .button {
   -webkit-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
-  background: #2ECC40;
   outline: 0;
   border: 0;
   border-radius: 4px;
@@ -734,11 +886,12 @@ input[type="email"] {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 9px 15px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  white-space: nowrap; }
   .button:visited {
     color: #fff; }
   .button:hover {
-    background: #2ECC40; }
+    color: #f5f5f5; }
   .button:active {
     -webkit-transform: translateY(1px);
     -ms-transform: translateY(1px);

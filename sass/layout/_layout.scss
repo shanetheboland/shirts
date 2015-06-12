@@ -8,13 +8,13 @@
    }
    @media screen and (max-width: 450px) {
     .content-wrapper {
-        padding: $spacing-unit;
+        padding: 0 $spacing-unit;
     }
    }
    @media screen and (min-width: 450px) {
     .content-wrapper {
         width: 100%;
-        padding: $spacing-unit;
+        padding: 0 $spacing-unit;
     }
    }
    @media screen and (min-width: 550px) {
@@ -25,20 +25,20 @@
     @media screen and (min-width: 680px) {
     .content-wrapper {
         width: 70%;
-        padding-top: $spacing-unit;
+        // padding-top: $spacing-unit;
     }
    }
    @media screen and (min-width: 920px) {
     .content-wrapper {
         width: 55%;
-        padding-top: $lg-spacing-unit;
+        // padding-top: $lg-spacing-unit;
     }
    }
    @media screen and (min-width: 1200px) {
     .content-wrapper {
         max-width: 500px;//make sure the line-length doesn’t get too wide on large screens
         width: 40%;//65-70 character line-length at this width
-        padding-top: $xl-spacing-unit;
+        // padding-top: $xl-spacing-unit;
     }
    }
 
